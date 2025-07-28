@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajadores - Vinambra Digital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>👩‍⚕️ Trabajadores de Vinambra</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Rol</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for trabajador in trabajadores %}
+                <tr>
+                    <td>{{ trabajador.nombre }}</td>
+                    <td>{{ trabajador.rol }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
