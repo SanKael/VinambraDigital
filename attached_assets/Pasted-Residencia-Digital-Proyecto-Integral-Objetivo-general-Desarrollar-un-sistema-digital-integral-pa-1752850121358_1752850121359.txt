@@ -1,0 +1,71 @@
+Residencia Digital – Proyecto Integral
+Objetivo general
+Desarrollar un sistema digital integral para la gestión interna de la residencia, que permita organizar, consultar y
+actualizar toda la documentación relevante de trabajadores y residentes, además de ofrecer a las familias un
+acceso seguro y controlado a información sobre sus seres queridos.
+Este software se diseñará a medida de las necesidades reales del centro, con visión modular, accesos
+diferenciados y posibilidad de crecimiento futuro.
+1. Tipos de usuarios
+El sistema contará con cuentas individuales para los siguientes perfiles:
+- Auxiliares
+- Equipo técnico (psicología, trabajo social, terapeuta ocupacional, fisioterapia, dirección)
+- Enfermería
+- Mantenimiento
+- Limpieza
+- Coordinación
+- Administración
+- Familiares
+Cada tipo de usuario tendrá permisos específicos, definidos por su rol y jerarquía dentro de la organización.
+2. Sistema de accesos y jerarquía
+Habrá diferentes niveles de acceso:
+- Familiares: solo consulta de información limitada y autorizada (evolución médica básica, actividades realizadas,
+material multimedia).
+- Trabajadores: acceso parcial o total según el rol.
+- Dirección: acceso completo, incluyendo edición y gestión global de usuarios y datos.
+3. Módulo de trabajadores
+Cada trabajador tendrá una ficha digital personalizada que incluirá:
+- Datos personales y de contacto
+- Documentos personales (contratos, nóminas, planillas)
+- Historial de formaciones completadas
+- Formaciones futuras programadas
+- Participación en proyectos
+- Comunicados importantes (normas, noticias, actualizaciones internas)
+Gestión de documentos: Solo la dirección y administración podrán subir, modificar o eliminar documentos.
+*Pendiente de definir*: posibilidad de firma digital o acuse de lectura de ciertos documentos.
+4. Módulo de residentes
+Cada residente tendrá una ficha estructurada con los siguientes campos:
+- Información personal (nombre, edad, habitación…)
+- Datos médicos y evolución clínica
+- Historia de vida
+- Gustos, preferencias y costumbres
+- Enseres personales (registro de pertenencias importantes)
+- Registro de actividades realizadas
+- Material multimedia asociado (fotos, vídeos…)
+Gestión por roles: Dirección, administración, enfermería y coordinación podrán editar los datos según jerarquía.
+El sistema permitirá generar y consultar informes periódicos.
+5. Módulo de familiares
+Los familiares autorizados podrán acceder mediante cuenta individual vinculada manualmente por la dirección al
+residente correspondiente. Desde su perfil podrán:
+- Consultar parte de la evolución médica
+- Ver actividades realizadas y contenido multimedia
+- Dejar mensajes o preguntas (opcional)
+Este acceso estará restringido, con especial atención a la privacidad y la seguridad de los datos.
+6. Funcionalidades transversales
+- Calendario de actividades para residentes (editable por coordinación y técnicos).
+- Sistema de notificaciones internas y por correo.
+- Informes automáticos: posibilidad de generar listados mensuales de actividades, seguimiento clínico, etc.
+7. Ampliaciones futuras posibles
+- Sistema dinámico de turnos para trabajadores
+- Firma digital integrada o acuse de lectura
+- Registro de voz
+- Estadísticas de salud o comportamiento
+- Integración con otros sistemas ya en uso por dirección
+8. Seguridad y privacidad
+- Acceso por contraseña individual
+- Relación familia-residente gestionada solo desde administración
+- Registro de cambios y actividad por usuario (bitácora interna)
+- Posibilidad de añadir verificación extra para información sensible
+Próximos pasos
+1. Revisión de este documento por parte de la dirección.
+2. Confirmación, corrección o ampliación de los módulos y funcionalidades.
+3. Aprobación del MVP inicial (versión mínima viable) para comenzar desarrollo.
