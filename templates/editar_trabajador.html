@@ -2,12 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Añadir Trabajador</title>
+    <title>Editar Trabajador</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="contenedor">
-        <h1>➕ Añadir nuevo trabajador</h1>
+        <h1>🖋️ Editar trabajador</h1>
+
         {% with mensajes = get_flashed_messages() %}
           {% if mensajes %}
             <div class="mensaje">
@@ -18,24 +19,22 @@
           {% endif %}
         {% endwith %}
 
-        <form action="/añadir-trabajador" method="post">
+        <form action="/editar-trabajador/{{ indice }}" method="post">
             <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required><br><br>
+            <input type="text" id="nombre" name="nombre" value="{{ trabajador.nombre }}" required><br><br>
 
             <label for="rol">Rol:</label><br>
-            <input type="text" id="rol" name="rol" required><br><br>
+            <input type="text" id="rol" name="rol" value="{{ trabajador.rol }}" required><br><br>
 
-            <button type="submit">Guardar</button>
+            <button type="submit">Guardar cambios</button>
         </form>
 
         <br>
-
         <a href="/trabajadores">
-            <button>👥 Ver trabajadores</button>
+            <button>👥 Volver al listado</button>
         </a>
-
         <a href="/">
-            <button>🏠 Volver al inicio</button>
+            <button>🏠 Inicio</button>
         </a>
     </div>
 </body>

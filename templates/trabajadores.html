@@ -16,6 +16,15 @@
         <a href="/">
             <button>🏠 Volver al inicio</button>
         </a>
+        {% with mensajes = get_flashed_messages() %}
+          {% if mensajes %}
+            <div class="mensaje">
+              {% for msg in mensajes %}
+                <p>{{ msg }}</p>
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endwith %}
 
         <br><br>
 
@@ -27,12 +36,20 @@
                 </tr>
             </thead>
             <tbody>
-                {% for trabajador in trabajadores %}
-                <tr>
-                    <td>{{ trabajador.nombre }}</td>
-                    <td>{{ trabajador.rol }}</td>
-                </tr>
-                {% endfor %}
+                <tbody>
+    {% for trabajador in trabajadores %}
+    <tr>
+        <td>{{ trabajador.nombre }}</td>
+        <td>{{ trabajador.rol }}</td>
+        <td>
+            <a href="/editar-trabajador/{{ loop.index0 }}">
+                <button>🖋️ Editar</button>
+            </a>
+        </td>
+    </tr>
+    {% endfor %}
+</tbody>
+
             </tbody>
         </table>
     </div>

@@ -14,5 +14,9 @@
     {
         "nombre": "Santiago León",
         "rol": "Auxiliar de Enfermeria"
+    },
+    {
+        "nombre": "Pepe",
+        "rol": "pepero"
     }
 ]
